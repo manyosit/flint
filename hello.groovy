@@ -4,7 +4,7 @@ log.info("Welcome to flintibi!")
 
 response=call.connector("db")
               .set("action","insert" )
-              .set("query","insert into user (name, active) values ('test', 1)")
+              .set("query", "insert into engineers (age,lastname,city) values(27,'ani','mumbai')",
               .sync()
 
 log.info "did it"
